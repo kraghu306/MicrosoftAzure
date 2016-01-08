@@ -80,25 +80,25 @@ Estimated time to complete this lab: **1-2 Hours**
 
 	![](media/hdinsight-cluster-setup/image5.png)
 
->  NOTE:
->	*Windows based HDInsight cluster can only be placed into a classical virtual network.*
+	>  NOTE:
+	>	*Windows based HDInsight cluster can only be placed into a classical virtual network.*
 
 	-	**External Metastores**: Specify an Azure SQL database to store Hive and Oozie metadata associated with the cluster.
 
->	NOTE:
->	 *Metastore configuration is not available for HBase cluster types.*
+	>	NOTE:
+	>	 *Metastore configuration is not available for HBase cluster types.*
 	
 	![](media/hdinsight-cluster-setup/image6.png)
 
 	For **Use an existing SQL DB for Hive** metadata, click **Yes**, select a SQL database, and then provide the username/password for the database. 
 	Repeat these steps if you want to **Use an existing SQL DB for Oozie** metadata. Click **Select** till you are back on the **Optional Configuration** blade.
 
->	NOTE:
+	>	NOTE:
 
->	*The Azure SQL database used for the metastore must allow connectivity to other Azure services, 
->	including Azure HDInsight. On the Azure SQL database dashboard, on the right side, click the server name. 
->	This is the server on which the SQL database instance is running. Once you are on the server view, 
->	click **Configure**, and then for **Azure Services**, click **Yes**, and then click **Save**.	
+	>	*The Azure SQL database used for the metastore must allow connectivity to other Azure services, 
+	>	including Azure HDInsight. On the Azure SQL database dashboard, on the right side, click the server name. 
+	>	This is the server on which the SQL database instance is running. Once you are on the server view, 
+	>	click **Configure**, and then for **Azure Services**, click **Yes**, and then click **Save**.	
 	
 	-	**Script Actions** if you want to use a custom script to customize a cluster, as the cluster is being created. 
 		For more information about script actions, see [Customize HDInsight clusters using Script Action] (https://azure.microsoft.com/en-in/documentation/articles/hdinsight-hadoop-customize-cluster/). 
@@ -155,7 +155,7 @@ To run the sample:
 	and then from the **Cluster Dashboard** blade, click **HDInsight Cluster Dashboard**. 
 	Alternatively, you can directly open the dashboard by using the following URL:
 	
-	**https://<clustername>.azurehdinsight.net**
+	**https://_clustername_.azurehdinsight.net**
 	
 When prompted, authenticate by using the administrator user name and password you used when provisioning the cluster.	
 	
