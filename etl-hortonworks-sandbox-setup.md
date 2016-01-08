@@ -246,7 +246,7 @@ In this task you will login to the Hortonworks Sandbox VM and transfer data from
 2.	Execute the following command to view the available databases in your Azure SQL Database. 
 	Replace the placeholder value with the name of your Azure SQL Database Server that you created and noted in Task 2.
 	
-	`*sqoop list-databases --connect jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433 --username demouser --password demo@pass1*`
+	`sqoop list-databases --connect jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433 --username demouser --password demo@pass1`
 	
 	Below you can see that we have the AdventureWorks database available.
 	![](media/etl-hortonworks-sandbox-setup/image29.png)
@@ -288,7 +288,7 @@ In this task you will login to the Hortonworks Sandbox VM and transfer data from
 
 3.	A screenshot of the output of the following query from the Beeswax interface using the same IP.
 
-	> SELECT * FROM SalesOrderDetail
+	`SELECT * FROM SalesOrderDetail`
 
 	![](media/etl-hortonworks-sandbox-setup/image36.png)
 
