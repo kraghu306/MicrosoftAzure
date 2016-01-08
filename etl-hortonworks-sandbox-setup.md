@@ -151,7 +151,7 @@ In this exercise, you will create a virtual machine using the **‘Hortonworks S
 
  	![](media/etl-hortonworks-sandbox-setup/image18.png)
 	
-10.	If the portal does not refresh, click **Virtual Machines (Classic)* to see the latest status of the Virtual Machine. 
+10.	If the portal does not refresh, click **Virtual Machines (Classic)** to see the latest status of the Virtual Machine. 
 	Wait until the status turns to **‘Running’**.	
 	
  	![](media/etl-hortonworks-sandbox-setup/image19.png)
@@ -170,7 +170,7 @@ In this exercise, you will create a virtual machine using the **‘Hortonworks S
 		
 14.	Enter the following command download and extract the SQL Server JDBC driver.
 
-	> curl -L 'https://download.microsoft.com/download/0/2/A/02AAE597-3865-456C-AE7F-613F99F850A8/sqljdbc_4.2.6420.100_enu.tar.gz' | tar xz
+	`curl -L 'https://download.microsoft.com/download/0/2/A/02AAE597-3865-456C-AE7F-613F99F850A8/sqljdbc_4.2.6420.100_enu.tar.gz' | tar xz`
 	
 	> NOTE:
 	> *You can copy this command into your clipboard and then paste it into the terminal window open in your browser.  Simply right-click anywhere in the 
@@ -180,7 +180,7 @@ In this exercise, you will create a virtual machine using the **‘Hortonworks S
 15.	In the next step, copy the extracted SQL JDBC drivers to /usr/hdp/current/sqoop-client/lib. 
 	*Note that use of the sudo command will require you to reenter your password*.
 	
-	> sudo cp sqljdbc_4.2/enu/*.jar /usr/hdp/current/sqoop-client/lib
+	`sudo cp sqljdbc_4.2/enu/*.jar /usr/hdp/current/sqoop-client/lib`
 	
 	The Shell will then resemble the next screen
 
@@ -188,8 +188,8 @@ In this exercise, you will create a virtual machine using the **‘Hortonworks S
 	
 16.	Execute the following commands to navigate to **/usr/hdp/current/sqoop-client/lib** to verify that the JDBC drivers are installed.
 
-	> cd /usr/hdp/current/sqoop-client/lib
-	> ls -l sqljdbc*
+	`cd /usr/hdp/current/sqoop-client/lib`
+	`ls -l sqljdbc*`
 
 	The screen will resemble below.
 	![](media/etl-hortonworks-sandbox-setup/image23.png)
@@ -245,8 +245,7 @@ In this task you will login to the Hortonworks Sandbox VM and transfer data from
 2.	Execute the following command to view the available databases in your Azure SQL Database. 
 	Replace the placeholder value with the name of your Azure SQL Database Server that you created and noted in Task 2.
 	
-	> *sqoop list-databases --connect jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433 
-	> --username demouser --password demo@pass1*
+	`*sqoop list-databases --connect jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433 --username demouser --password demo@pass1*`
 	
 	Below you can see that we have the AdventureWorks database available.
 	![](media/etl-hortonworks-sandbox-setup/image29.png)
@@ -254,9 +253,7 @@ In this task you will login to the Hortonworks Sandbox VM and transfer data from
 3.	Next, extract data from our AdventureWorks database into a Hive table by executing the following command. 
 	**Replace the placeholder value** using the SQL Database name you saved earler.
 	
-	>sudo -u hdfs sqoop import --connect "jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433;database=AdventureWorks;
-	>user=demouser;password=demo@pass1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;" 
-	>--table SalesOrderDetail --hive-import -- --schema SalesLT
+	`sudo -u hdfs sqoop import --connect "jdbc:sqlserver://[AdventureWorks SQL Database Server Name].database.windows.net:1433;database=AdventureWorks;user=demouser;password=demo@pass1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;" --table SalesOrderDetail --hive-import -- --schema SalesLT`
 	
 	The output from the above command should return output like this.  If you scroll back through the output you will see job metrics, error and warning information, etc. 
 	![](media/etl-hortonworks-sandbox-setup/image30.png)
@@ -270,7 +267,7 @@ In this task you will login to the Hortonworks Sandbox VM and transfer data from
 	
 6.	In the Query Editor type the following query in the space provided and click the Execute button.
 
-	> SELECT * FROM SalesOrderDetail
+	`SELECT * FROM SalesOrderDetail`
 	
 	![](media/etl-hortonworks-sandbox-setup/image32.png)
 	
