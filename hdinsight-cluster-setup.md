@@ -120,11 +120,8 @@ Estimated time to complete this lab: **1-2 Hours**
 	![](media/hdinsight-cluster-setup/image9.png)
 
 Use the following to understand the icons at the top of this blade, and in the **Essentials** section:
-
 	-	**Settings** and **All Settings**: Displays the **Settings** blade for the cluster, which allows you to access detailed configuration information for the cluster.
-	
-	-	**Dashboard, Cluster Dashboard, and URL**: These are all ways to access the cluster dashboard, which is a Web portal to run jobs on the cluster.
-	
+	-	**Dashboard, Cluster Dashboard, and URL**: These are all ways to access the cluster dashboard, which is a Web portal to run jobs on the cluster.	
 	-	**Remote Desktop**: Enables you to enable/disable remote desktop on the cluster nodes.
 
 ### 
