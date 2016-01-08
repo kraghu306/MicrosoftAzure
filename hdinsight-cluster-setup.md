@@ -38,52 +38,52 @@ Estimated time to complete this lab: **1-2 Hours**
 
 	-  **Cluster Name**: Enter a name for the cluster. A green check 
 		will appear beside the cluster name if the name is available.
-    2.	**Cluster Type**: Select Hadoop. Other options inclue HBase, Storm, and Spark.
-	3.	**Cluster Operating System**: Select Windows. To create a Linux-base cluster, 
+    -	**Cluster Type**: Select Hadoop. Other options inclue HBase, Storm, and Spark.
+	-	**Cluster Operating System**: Select Windows. To create a Linux-base cluster, 
 		select Linux. For our demo, let’s use Windows based Cluster 
-	4.	**Version**: See [HDInsight versions](https://azure.microsoft.com/en-in/documentation/articles/hdinsight-component-versioning/). 
-	5.	**Subscription**: Select the Azure subscription that will be used for creating this cluster.
-	6.	**Resource Group**: Select an existing or create a new resource group
-    7.	**Credentials**: Configure the username and the password for the Hadoop user (HTTP user). 
+	-	**Version**: See [HDInsight versions](https://azure.microsoft.com/en-in/documentation/articles/hdinsight-component-versioning/). 
+	-	**Subscription**: Select the Azure subscription that will be used for creating this cluster.
+	-	**Resource Group**: Select an existing or create a new resource group
+    -	**Credentials**: Configure the username and the password for the Hadoop user (HTTP user). 
 		If you enable remote desktop for the cluster, you will need to configure the remote desktop 
 		user username and password, and an account expiration date. Click Select at the bottom to save the changes.
 		
 	![](media/hdinsight-cluster-setup/image2.png)
 
-	8.  **Data Source**: Create a new or select an existing Azure Storage account to be used 
+	-.  **Data Source**: Create a new or select an existing Azure Storage account to be used 
 		as the default file system for the cluster.
 
     ![](media/hdinsight-cluster-setup/image3.png)
 	
-	8.  **Selection Method**: Set this to **from all subscriptions** to enable browsing 
+	-.  **Selection Method**: Set this to **from all subscriptions** to enable browsing 
 		of storage accounts from all your subscriptions. Set this to **Access Key** if you 
 		want to enter the **Storage Name** and **Access Key** of an existing storage account.
-	9.	**Select storage account/Create New**: Click Select storage account to browse and 
+	-	**Select storage account/Create New**: Click Select storage account to browse and 
 		select an existing storage account you want to associate with the cluster. Or, 
 		click Create New to create a new storage account. 
-	10.	**Choose Default Container**: Use this to enter the name of the default container to use for the cluster. 
+	-	**Choose Default Container**: Use this to enter the name of the default container to use for the cluster. 
 		While you can enter any name here, we recommend using the same name as the cluster so that you can easily 
 		recognize that the container is used for this specific cluster.
-	11.	**Location**: The geographic region that the storage account is in, or will be created in. 
+	-	**Location**: The geographic region that the storage account is in, or will be created in. 
 		This location will determine the cluster location. The cluster and its default storage account must 
 		co-locate in the same Azure data center.
-	12.	**Node Pricing Tiers**: Set the number of worker nodes that you need for the cluster. 
+	-	**Node Pricing Tiers**: Set the number of worker nodes that you need for the cluster. 
 		The estimated cost of the cluster will be shown within the blade.
 
 	![](media/hdinsight-cluster-setup/image4.png)
 	
-	13.	**Optional Configuration** to select the cluster version, as well as configure other optional 
+	-	**Optional Configuration** to select the cluster version, as well as configure other optional 
 		settings such as joining a **Virtual Network**, setting up an **External Metastore** to hold data for Hive and Oozie, 
 		use Script Actions to customize a cluster to install custom components, or use additional storage accounts with the cluster.
-	14.	**HDInsight Version**: Select the version you want to use for the cluster. For more information, see HDInsight cluster versions.
-	15.	**Virtual Network**: Select an Azure virtual network and the subnet if you want to place the cluster into a virtual network.
+	-	**HDInsight Version**: Select the version you want to use for the cluster. For more information, see HDInsight cluster versions.
+	-	**Virtual Network**: Select an Azure virtual network and the subnet if you want to place the cluster into a virtual network.
 
 	![](media/hdinsight-cluster-setup/image5.png)
 
 >  NOTE:
 >	*Windows based HDInsight cluster can only be placed into a classical virtual network.*
 
-	16.	**External Metastores**: Specify an Azure SQL database to store Hive and Oozie metadata associated with the cluster.
+	-	**External Metastores**: Specify an Azure SQL database to store Hive and Oozie metadata associated with the cluster.
 
 >	NOTE:
 >	 *Metastore configuration is not available for HBase cluster types.*
@@ -100,13 +100,13 @@ Estimated time to complete this lab: **1-2 Hours**
 >	This is the server on which the SQL database instance is running. Once you are on the server view, 
 >	click **Configure**, and then for **Azure Services**, click **Yes**, and then click **Save**.	
 	
-	17.	**Script Actions** if you want to use a custom script to customize a cluster, as the cluster is being created. 
+	-	**Script Actions** if you want to use a custom script to customize a cluster, as the cluster is being created. 
 		For more information about script actions, see [Customize HDInsight clusters using Script Action] (https://azure.microsoft.com/en-in/documentation/articles/hdinsight-hadoop-customize-cluster/). 
 		On the Script Actions blade provide the details as shown in the screen capture.
 	
 	![](media/hdinsight-cluster-setup/image7.png)
 	
-	18.	**Azure Storage Keys**: Specify additional storage accounts to associate with the cluster. 
+	-	**Azure Storage Keys**: Specify additional storage accounts to associate with the cluster. 
 		In the Azure Storage Keys blade, click Add a storage key, and then select an existing storage account or create a new account.
 	
 	![](media/hdinsight-cluster-setup/image8.png)
