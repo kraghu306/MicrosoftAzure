@@ -50,12 +50,12 @@ Estimated time to complete this lab: **1-2 Hours**
 		
 	![](media/hdinsight-cluster-setup/image2.png)
 
-	-.  **Data Source**: Create a new or select an existing Azure Storage account to be used 
+	-  **Data Source**: Create a new or select an existing Azure Storage account to be used 
 		as the default file system for the cluster.
 
     ![](media/hdinsight-cluster-setup/image3.png)
 	
-	-.  **Selection Method**: Set this to **from all subscriptions** to enable browsing 
+	-  **Selection Method**: Set this to **from all subscriptions** to enable browsing 
 		of storage accounts from all your subscriptions. Set this to **Access Key** if you 
 		want to enter the **Storage Name** and **Access Key** of an existing storage account.
 	-	**Select storage account/Create New**: Click Select storage account to browse and 
