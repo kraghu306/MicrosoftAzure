@@ -120,9 +120,10 @@ Estimated time to complete this lab: **1-2 Hours**
 	![](media/hdinsight-cluster-setup/image9.png)
 
 Use the following to understand the icons at the top of this blade, and in the **Essentials** section:
-	-	**Settings** and **All Settings**: Displays the **Settings** blade for the cluster, which allows you to access detailed configuration information for the cluster.
-	-	**Dashboard, Cluster Dashboard, and URL**: These are all ways to access the cluster dashboard, which is a Web portal to run jobs on the cluster.	
-	-	**Remote Desktop**: Enables you to enable/disable remote desktop on the cluster nodes.
+-	**Settings** and **All Settings**: Displays the **Settings** blade for the cluster, 
+	which allows you to access detailed configuration information for the cluster.
+-	**Dashboard, Cluster Dashboard, and URL**: These are all ways to access the cluster dashboard, which is a Web portal to run jobs on the cluster.	
+-	**Remote Desktop**: Enables you to enable/disable remote desktop on the cluster nodes.
 
 ### 
 
@@ -148,19 +149,17 @@ To run the sample:
 
 1.  From the [Azure Portal](https://portal.azure.com), from the Startboard (if you pinned the cluster there), 
 	click the cluster tile on which you want to run the sample.
-    
 2.	From the cluster blade, under **Quick Links**, click **Cluster Dashboard**, 
 	and then from the **Cluster Dashboard** blade, click **HDInsight Cluster Dashboard**. 
 	Alternatively, you can directly open the dashboard by using the following URL:
 	
 	**https://_clustername_.azurehdinsight.net**
 	
-When prompted, authenticate by using the administrator user name and password you used when provisioning the cluster.	
+	When prompted, authenticate by using the administrator user name and password you used when provisioning the cluster.	
 	
 3.	From the web page that opens, click the **Getting Started Gallery** tab, 
 	and then under the **Samples** category, click the **Website Log Analysis** sample.
-	
-4. Follow the instructions provided on the web page to finish the sample.
+4.	Follow the instructions provided on the web page to finish the sample.
 	------
 
 ##Summary
