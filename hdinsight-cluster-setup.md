@@ -95,10 +95,10 @@ Estimated time to complete this lab: **1-2 Hours**
 
 	>	NOTE:
 
-	>	*The Azure SQL database used for the metastore must allow connectivity to other Azure services, 
+	>	The Azure SQL database used for the metastore must allow connectivity to other Azure services, 
 	>	including Azure HDInsight. On the Azure SQL database dashboard, on the right side, click the server name. 
 	>	This is the server on which the SQL database instance is running. Once you are on the server view, 
-	>	click Configure, and then for Azure Services, click Yes, and then click Save.	
+	>	click *Configure*, and then for Azure Services, click Yes, and then click Save.	
 	
 	-	**Script Actions** if you want to use a custom script to customize a cluster, as the cluster is being created. 
 		For more information about script actions, see [Customize HDInsight clusters using Script Action] (https://azure.microsoft.com/en-in/documentation/articles/hdinsight-hadoop-customize-cluster/). 
