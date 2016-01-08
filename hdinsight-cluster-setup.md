@@ -48,12 +48,12 @@ Estimated time to complete this lab: **1-2 Hours**
 		If you enable remote desktop for the cluster, you will need to configure the remote desktop 
 		user username and password, and an account expiration date. Click Select at the bottom to save the changes.
 		
-	![](images/media/image2.png)
+	![](media/hdinsight-cluster-setup/image2.png)
 
 	8.  **Data Source**: Create a new or select an existing Azure Storage account to be used 
 		as the default file system for the cluster.
 
-    ![](images/media/image3.png)
+    ![](media/hdinsight-cluster-setup/image3.png)
 	
 	8.  **Selection Method**: Set this to **from all subscriptions** to enable browsing 
 		of storage accounts from all your subscriptions. Set this to **Access Key** if you 
@@ -70,7 +70,7 @@ Estimated time to complete this lab: **1-2 Hours**
 	12.	**Node Pricing Tiers**: Set the number of worker nodes that you need for the cluster. 
 		The estimated cost of the cluster will be shown within the blade.
 
-	![](images/media/image4.png)
+	![](media/hdinsight-cluster-setup/image4.png)
 	
 	13.	**Optional Configuration** to select the cluster version, as well as configure other optional 
 		settings such as joining a **Virtual Network**, setting up an **External Metastore** to hold data for Hive and Oozie, 
@@ -78,7 +78,7 @@ Estimated time to complete this lab: **1-2 Hours**
 	14.	**HDInsight Version**: Select the version you want to use for the cluster. For more information, see HDInsight cluster versions.
 	15.	**Virtual Network**: Select an Azure virtual network and the subnet if you want to place the cluster into a virtual network.
 
-	![](images/media/image5.png)
+	![](media/hdinsight-cluster-setup/image5.png)
 
 	##### ***NOTE:***
 
@@ -90,7 +90,7 @@ Estimated time to complete this lab: **1-2 Hours**
 
 > *Metastore configuration is not available for HBase cluster types.*
 	
-	![](images/media/image6.png)
+	![](media/hdinsight-cluster-setup/image6.png)
 
 	For **Use an existing SQL DB for Hive** metadata, click **Yes**, select a SQL database, and then provide the username/password for the database. 
 	Repeat these steps if you want to **Use an existing SQL DB for Oozie** metadata. Click **Select** till you are back on the **Optional Configuration** blade.
@@ -106,12 +106,12 @@ Estimated time to complete this lab: **1-2 Hours**
 		For more information about script actions, see [Customize HDInsight clusters using Script Action] (https://azure.microsoft.com/en-in/documentation/articles/hdinsight-hadoop-customize-cluster/). 
 		On the Script Actions blade provide the details as shown in the screen capture.
 	
-	![](images/media/image7.png)
+	![](media/hdinsight-cluster-setup/image7.png)
 	
 	18.	**Azure Storage Keys**: Specify additional storage accounts to associate with the cluster. 
 		In the Azure Storage Keys blade, click Add a storage key, and then select an existing storage account or create a new account.
 	
-	![](images/media/image8.png)
+	![](media/hdinsight-cluster-setup/image8.png)
 	
 4.  Click **Create**. Selecting **Pin to Startboard** will add a tile for cluster to the Startboard of your Portal. The icon will indicate that the cluster is being created, and will change to display the HDInsight icon once creation has completed.
 
@@ -119,7 +119,7 @@ It will take some time for the cluster to be created, usually around 15 minutes.
 
 5.  Once the creation completes, click the tile for the cluster from the Startboard to launch the cluster blade. The cluster blade provides essential information about the cluster such as the name, the resource group it belongs to, the location, the operating system, URL for the cluster dashboard, etc.
 
-	![](images/media/image9.png)
+	![](media/hdinsight-cluster-setup/image9.png)
 
 Use the following to understand the icons at the top of this blade, and in the **Essentials** section:
 	1.	**Settings** and **All Settings**: Displays the **Settings** blade for the cluster, which allows you to access detailed configuration information for the cluster.
