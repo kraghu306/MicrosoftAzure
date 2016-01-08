@@ -80,7 +80,7 @@ Estimated time to complete this lab: **1-2 Hours**
 
 	![](media/hdinsight-cluster-setup/image5.png)
 
-	##### ***NOTE:***
+>	##### ***NOTE:***
 
 > *Windows based HDInsight cluster can only be placed into a classical virtual network.*
 
