@@ -189,6 +189,7 @@ In this exercise, you will create a virtual machine using the **‘Hortonworks S
 16.	Execute the following commands to navigate to **/usr/hdp/current/sqoop-client/lib** to verify that the JDBC drivers are installed.
 
 	`cd /usr/hdp/current/sqoop-client/lib`
+
 	`ls -l sqljdbc*`
 
 	The screen will resemble below.
