@@ -30,13 +30,13 @@ Estimated time to complete this lab: **1-2 Hours**
 1.  Launch an **In-Private Browser Window** and navigate to
     <https://portal.azure.com> . The following page should load.
 
-2.  2.	Click **NEW**, Click **Data Analytics**, and then click **HDInsight**.
+2.  Click **NEW**, Click **Data Analytics**, and then click **HDInsight**.
 
     ![](media/hdinsight-cluster-setup/image1.png)
 
 3.  Type or select the following values:
 
-	1.  **Cluster Name**: Enter a name for the cluster. A green check 
+	-  **Cluster Name**: Enter a name for the cluster. A green check 
 		will appear beside the cluster name if the name is available.
     2.	**Cluster Type**: Select Hadoop. Other options inclue HBase, Storm, and Spark.
 	3.	**Cluster Operating System**: Select Windows. To create a Linux-base cluster, 
